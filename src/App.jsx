@@ -4,6 +4,7 @@ import { openModal } from "./redux/modalSlice";
 import Modal from "./components/Modal";
 import Product from "./components/Product";
 import Cart from "./components/Cart";
+import Auth from "./components/Auth"
 
 function App() {
   const dispatch = useDispatch();
@@ -19,6 +20,9 @@ function App() {
       <Product />
       <h1 className="text-2xl font-bold mb-4 mt-5">3.</h1>
       <Cart />
+      <h1 className="text-2xl font-bold mb-4 mt-5">4. ni redux-persist ornatdim lekin ishlata olmadim</h1>
+      <h1 className="text-2xl font-bold mb-4 mt-5">5.</h1>
+      <Auth></Auth>
     </div>
   );
 }
