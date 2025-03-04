@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { closeModal } from "../redux/modalSlice";
 
-const Modal = () => {
+function Modal() {
   const isOpen = useSelector((state) => state.modal.isOpen);
   const dispatch = useDispatch();
 

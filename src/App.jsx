@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { openModal } from "./redux/modalSlice";
 import Modal from "./components/Modal";
 import Product from "./components/Product";
+import Cart from "./components/Cart";
 
 function App() {
   const dispatch = useDispatch();
@@ -16,6 +17,8 @@ function App() {
       <Modal />
       <h1 className="text-2xl font-bold mb-4 mt-5">2.</h1>
       <Product />
+      <h1 className="text-2xl font-bold mb-4 mt-5">3.</h1>
+      <Cart />
     </div>
   );
 }

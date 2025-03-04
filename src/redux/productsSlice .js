@@ -12,10 +12,10 @@ const productsSlice = createSlice({
       state.products.push(action.payload);
     },
     removeProduct: function(state, action) {
-      state.products = state.products.filter(product => product.id !== action.payload);
+      state.products = state.products.filter(product => product.id != action.payload);
     },
     updateProduct: function(state, action) {
-      const index = state.products.findIndex(product => product.id === action.payload.id);
+      const index = state.products.findIndex(product => product.id == action.payload.id);
       if (index !== -1) {
         state.products[index] = action.payload;
       }
